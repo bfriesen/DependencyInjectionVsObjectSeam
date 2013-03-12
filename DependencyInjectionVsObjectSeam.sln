@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{68752DD6-1CB6-4836-82D6-FB380E2440B5}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyDataLayer", "LegacyDataLayer\LegacyDataLayer.csproj", "{87549F65-850C-444F-8DAD-D29C8AA53E36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyBusinessLogicLayer", "LegacyBusinessLogicLayer\LegacyBusinessLogicLayer.csproj", "{0D0F7D03-EF17-4EA8-8BFC-3ABE9C32F370}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Legacy", "Legacy", "{ED0DE8C7-B1B0-4B78-AC19-2BC537399EFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyConsoleApplication", "LegacyConsoleApplication\LegacyConsoleApplication.csproj", "{914EC360-0E0E-4290-A427-5844D8180E08}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "DependencyInjection", "{BFF1BB14-CCEB-49F6-9A11-177F30A746E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ObjectSeam", "ObjectSeam", "{0EF87417-DF5F-40AF-99AD-68E6D6BB0269}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjectionTests", "DependencyInjectionTests\DependencyInjectionTests.csproj", "{DE233D81-8EB8-411C-A8D6-09C2C50D0280}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjectionBusinessLogicLayer", "DependencyInjectionBusinessLogicLayer\DependencyInjectionBusinessLogicLayer.csproj", "{7621CA34-92A0-4BA6-8CDE-CF97256A8926}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectSeamTests", "ObjectSeamTests\ObjectSeamTests.csproj", "{0AE3E2D3-44F5-4755-9FB6-F6A86B5D01A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectSeamBusinessLogicLayer", "ObjectSeamBusinessLogicLayer\ObjectSeamBusinessLogicLayer.csproj", "{1547916E-23F5-4077-BADC-B925F8BB3682}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87549F65-850C-444F-8DAD-D29C8AA53E36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87549F65-850C-444F-8DAD-D29C8AA53E36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87549F65-850C-444F-8DAD-D29C8AA53E36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87549F65-850C-444F-8DAD-D29C8AA53E36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D0F7D03-EF17-4EA8-8BFC-3ABE9C32F370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D0F7D03-EF17-4EA8-8BFC-3ABE9C32F370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D0F7D03-EF17-4EA8-8BFC-3ABE9C32F370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D0F7D03-EF17-4EA8-8BFC-3ABE9C32F370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{914EC360-0E0E-4290-A427-5844D8180E08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{914EC360-0E0E-4290-A427-5844D8180E08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{914EC360-0E0E-4290-A427-5844D8180E08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{914EC360-0E0E-4290-A427-5844D8180E08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE233D81-8EB8-411C-A8D6-09C2C50D0280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE233D81-8EB8-411C-A8D6-09C2C50D0280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE233D81-8EB8-411C-A8D6-09C2C50D0280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE233D81-8EB8-411C-A8D6-09C2C50D0280}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7621CA34-92A0-4BA6-8CDE-CF97256A8926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7621CA34-92A0-4BA6-8CDE-CF97256A8926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7621CA34-92A0-4BA6-8CDE-CF97256A8926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7621CA34-92A0-4BA6-8CDE-CF97256A8926}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AE3E2D3-44F5-4755-9FB6-F6A86B5D01A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AE3E2D3-44F5-4755-9FB6-F6A86B5D01A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AE3E2D3-44F5-4755-9FB6-F6A86B5D01A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AE3E2D3-44F5-4755-9FB6-F6A86B5D01A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1547916E-23F5-4077-BADC-B925F8BB3682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1547916E-23F5-4077-BADC-B925F8BB3682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1547916E-23F5-4077-BADC-B925F8BB3682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1547916E-23F5-4077-BADC-B925F8BB3682}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0D0F7D03-EF17-4EA8-8BFC-3ABE9C32F370} = {ED0DE8C7-B1B0-4B78-AC19-2BC537399EFA}
+		{87549F65-850C-444F-8DAD-D29C8AA53E36} = {ED0DE8C7-B1B0-4B78-AC19-2BC537399EFA}
+		{914EC360-0E0E-4290-A427-5844D8180E08} = {ED0DE8C7-B1B0-4B78-AC19-2BC537399EFA}
+		{DE233D81-8EB8-411C-A8D6-09C2C50D0280} = {BFF1BB14-CCEB-49F6-9A11-177F30A746E4}
+		{7621CA34-92A0-4BA6-8CDE-CF97256A8926} = {BFF1BB14-CCEB-49F6-9A11-177F30A746E4}
+		{0AE3E2D3-44F5-4755-9FB6-F6A86B5D01A8} = {0EF87417-DF5F-40AF-99AD-68E6D6BB0269}
+		{1547916E-23F5-4077-BADC-B925F8BB3682} = {0EF87417-DF5F-40AF-99AD-68E6D6BB0269}
+	EndGlobalSection
+EndGlobal
