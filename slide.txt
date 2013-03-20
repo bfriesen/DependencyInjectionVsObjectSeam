@@ -1,0 +1,13 @@
+
+
+
+
+
+
+			Creating Testable Code:
+		  Dependency Injection vs. Object Seam
+
+			     Brian Friesen
+			     @brianfriesen
+			brian.friesen@gmail.com
+			    randomskunk.com

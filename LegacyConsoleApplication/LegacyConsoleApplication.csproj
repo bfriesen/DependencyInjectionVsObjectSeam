@@ -48,9 +48,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LegacyBusinessLogicLayer\LegacyBusinessLogicLayer.csproj">
-      <Project>{0d0f7d03-ef17-4ea8-8bfc-3abe9c32f370}</Project>
-      <Name>LegacyBusinessLogicLayer</Name>
+    <ProjectReference Include="..\LegacyDataLayer\LegacyDataLayer.csproj">
+      <Project>{87549f65-850c-444f-8dad-d29c8aa53e36}</Project>
+      <Name>LegacyDataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ObjectSeamBusinessLogicLayer\ObjectSeamBusinessLogicLayer.csproj">
+      <Project>{1547916e-23f5-4077-badc-b925f8bb3682}</Project>
+      <Name>ObjectSeamBusinessLogicLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

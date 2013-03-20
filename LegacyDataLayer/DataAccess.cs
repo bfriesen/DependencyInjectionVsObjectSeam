@@ -9,8 +9,15 @@ namespace LegacyDataLayer
 {
     public static class DataAccess
     {
-        private static readonly string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"people.xml");
-        private static readonly XmlSerializer serializer = new XmlSerializer(typeof(List<Person>), new XmlRootAttribute("People"));
+        private static readonly string path =
+            Path.Combine(
+                Path.GetDirectoryName(
+                    Assembly.GetExecutingAssembly().Location),
+                    @"people.xml");
+        private static readonly XmlSerializer serializer =
+            new XmlSerializer(
+                typeof(List<Person>),
+                new XmlRootAttribute("People"));
 
         public static IEnumerable<Person> GetAllPeople()
         {
@@ -25,7 +32,8 @@ namespace LegacyDataLayer
             return GetAllPeople().SingleOrDefault(p => p.Id == id);
         }
 
-        public static IEnumerable<Person> FindPeople(Func<Person, bool> predicate)
+        public static IEnumerable<Person> FindPeople(
+            Func<Person, bool> predicate)
         {
             return GetAllPeople().Where(predicate);
         }

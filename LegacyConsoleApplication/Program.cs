@@ -27,8 +27,10 @@ namespace LegacyConsoleApplication
                     continue;
                 }
 
-                Console.WriteLine(greeter.SayHello(id));
+                // This is the important bit...
+                string greeting = greeter.SayHello(id);
 
+                Console.WriteLine(greeting);
                 Console.Write("Enter the person ID, or 'q' to quit: ");
             }
         }

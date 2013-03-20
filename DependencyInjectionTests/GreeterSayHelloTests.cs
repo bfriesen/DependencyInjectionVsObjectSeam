@@ -12,7 +12,8 @@ namespace DependencyInjectionTests
             Person foundPerson = new Person();
             foundPerson.Name = "Bob";
 
-            IDataAccessAdapter fakeDataAccessAdapter = new FakeDataAccessAdapter(foundPerson);
+            IDataAccessAdapter fakeDataAccessAdapter =
+                new FakeDataAccessAdapter(foundPerson);
 
             Greeter greeter = new Greeter(fakeDataAccessAdapter);
 
@@ -24,7 +25,8 @@ namespace DependencyInjectionTests
         [Test]
         public void WhenAPersonIsNotFoundThenHelloWorldIsReturned()
         {
-            IDataAccessAdapter fakeDataAccessAdapter = new FakeDataAccessAdapter(null);
+            IDataAccessAdapter fakeDataAccessAdapter =
+                new FakeDataAccessAdapter(null);
 
             Greeter greeter = new Greeter(fakeDataAccessAdapter);
 
