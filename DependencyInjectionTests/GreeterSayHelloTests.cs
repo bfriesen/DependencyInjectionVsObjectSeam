@@ -1,6 +1,5 @@
 ﻿using BusinessLogicLayer;
 using LegacyDataLayer;
-using Moq;
 using NUnit.Framework;
 
 namespace DependencyInjectionTests
@@ -13,10 +12,9 @@ namespace DependencyInjectionTests
             Person foundPerson = new Person();
             foundPerson.Name = "Bob";
 
-            Mock<IDataAccessAdapter> mockDataAccessAdapter = new Mock<IDataAccessAdapter>();
-            mockDataAccessAdapter.Setup(m => m.GetPerson(It.IsAny<int>())).Returns(foundPerson);
+            IDataAccessAdapter fakeDataAccessAdapter = new FakeDataAccessAdapter(foundPerson);
 
-            Greeter greeter = new Greeter(mockDataAccessAdapter.Object);
+            Greeter greeter = new Greeter(fakeDataAccessAdapter);
 
             string helloResult = greeter.SayHello(1);
 
@@ -26,10 +24,9 @@ namespace DependencyInjectionTests
         [Test]
         public void WhenAPersonIsNotFoundThenHelloWorldIsReturned()
         {
-            Mock<IDataAccessAdapter> mockDataAccessAdapter = new Mock<IDataAccessAdapter>();
-            mockDataAccessAdapter.Setup(m => m.GetPerson(It.IsAny<int>())).Returns(() => null);
+            IDataAccessAdapter fakeDataAccessAdapter = new FakeDataAccessAdapter(null);
 
-            Greeter greeter = new Greeter(mockDataAccessAdapter.Object);
+            Greeter greeter = new Greeter(fakeDataAccessAdapter);
 
             string helloResult = greeter.SayHello(1);
 
